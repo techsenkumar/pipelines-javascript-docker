@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: techsenkumarpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: techsenkumarpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: techsenkumarpipelinesjavascriptdocker 
+          image: mycontainerregistryt.azurecr.io/techsenkumarpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
